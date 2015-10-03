@@ -33,6 +33,23 @@ Requirements
 - libxkbcommon-x11 >= 0.5.0
 - librsvg
 
+Compiling
+_____________
+On Fedora Core 21:
+
+sudo dnf install
+    xcb-util-devel
+    xcb-util-image-devel
+    pam-devel
+    libev-devel
+    libxkbfile-devel
+    libxkbcommon-x11-devel
+    cairo-dock-devel
+
+Installation with XFCE
+----------------------
+
+
 Running i3lock
 -------------
 Simply invoke the 'i3lock' command. To get out of it, enter your password and

@@ -425,11 +425,13 @@ static void handle_key_press(xcb_key_press_event_t *event) {
  * Danger! This will eliminate all password checking and allow you to
  * press escape to login. Use this only for testing your SVG.
  *
+ */
+
         case XKB_KEY_Escape:
             clear_password_memory();
             turn_monitors_on();
             exit(0);
-*/
+//*/
         default:
             skip_repeated_empty_password = false;
     }
