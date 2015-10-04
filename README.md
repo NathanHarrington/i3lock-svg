@@ -46,9 +46,26 @@ sudo dnf install
     libxkbcommon-x11-devel
     cairo-dock-devel
 
-Installation with XFCE
-----------------------
 
+Installation
+----------------------
+If you run i3lock and it always gives you the wrong password, either
+install i3lock from the package manager, or update your pam
+configuration as described here:
+https://bbs.archlinux.org/viewtopic.php?id=170300
+
+echo "auth include login" > /etc/pam.d/i3lock 
+
+On XFCE with Fedora Core 21/22, remove xscreensaver:
+sudo dnf erase xscreensaver*
+
+Replace the xflock4 file with the contents of the i3lock program:
+<path_to_i3lock-svg> -i 1920x1080-wasatchphotonics.png 
+-s wasatchphotonics_prism.svg 
+
+Update your session startup parameters to include the xautolock
+configuration:
+xautolock -locker xflock4 -time 10
 
 Running i3lock
 -------------
@@ -72,7 +89,7 @@ in ascending order instead of random order.
 If the id "remove_background" is present "idle", "verfiy" and "fail" won't be
 rendered when drawing the animation frames.
 
-For easier testing, uncomment lines:
+For easier testing, uncomment lines in i3lock.c:
 ```
         case XKB_KEY_Escape:
             clear_password_memory();
