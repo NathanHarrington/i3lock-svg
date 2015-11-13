@@ -1,3 +1,7 @@
+
+![i3lock demo](/examples/WasatchPhotonics.gif "i3lock demo")
+
+
 i3lock - improved screen locker
 ===============================
 i3lock is a simple screen locker like slock. After starting it, you will
