@@ -1,5 +1,5 @@
 
-![i3lock demo](/examples/WasatchPhotonics.gif "i3lock demo")
+![i3lock demo](/examples/WasatchPhotonicsExample.gif "i3lock demo")
 
 
 i3lock - improved screen locker
