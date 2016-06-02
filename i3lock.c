@@ -432,6 +432,7 @@ static void handle_key_press(xcb_key_press_event_t *event) {
             turn_monitors_on();
             exit(0);
 */
+
         default:
             skip_repeated_empty_password = false;
     }
