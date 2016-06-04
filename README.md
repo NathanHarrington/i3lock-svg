@@ -106,7 +106,10 @@ Add an entry with the name:
 command:
     xss-lock -- slock
 comment:
-    trigger manually with xset s activate
+    configure screen locker timeout
+
+
+
 
 This will automatically lock the screen on suspend, and when the 
 Settings->Power Management settings "turn off the screen"
@@ -157,3 +160,31 @@ example:
 Upstream
 --------
 Please submit pull requests to https://github.com/i3/i3lock
+
+Ideas for animations:
+--------------------
+
+The planets - displays solar system orbits with the various planets
+appearing and disappering as you type in keys like:
+    http://codepen.io/kowlor/pen/ZYYQoy
+
+Random cubes - stages in transparent cubes appearing to eminate from the
+center as you type like:
+    http://codepen.io/natewiley/pen/rKdba
+
+Rainbow rocket man - 
+    http://codepen.io/chrisgannon/pen/EjVyXN/
+
+Word art - text like 'checking/unlocking/password', that fills in with
+    different colors, or the letters blink on and off individually
+
+Pure geometries - Rotations, circles, squares. Remember you can embed
+    png's in the svg as well, which essentially gives you any type of
+    animation desired.
+    http://codepen.io/aecend/pen/MYXpZJ
+
+Sci-fi homage - LCARS, JARVIS, Minority Report, Terminator, Oblivion
+
+Hackertyper style ridiculousness
+
+Astronaut image - failure is an alien in the helmet, pass is a human
