@@ -94,6 +94,7 @@ $I3PATH/i3lock -i $PNGFILE -s $SVGFILE
 # Setup the file to be executable
 sudo chmod +x /usr/bin/slock
 
+In Cinnamon go to:
 Settings->Screensaver
 Make sure these are off/disabled:
 Lock the computer when put to sleep
@@ -109,13 +110,9 @@ comment:
     configure screen locker timeout
 
 
-
-
 This will automatically lock the screen on suspend, and when the 
 Settings->Power Management settings "turn off the screen"
 
-That's the idea at least - currently testing with different scenarios to
-see if you can get it to behave like a 'normal' locker.
 
 
 Running i3lock
